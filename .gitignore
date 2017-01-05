@@ -1,1 +1,10 @@
 secrets.yaml
+*.conf
+deps
+home-assistant.log
+home-assistant_v2.db
+known_devices.yaml
+mysensors1.pickle
+secrets.yaml
+tts
+www
