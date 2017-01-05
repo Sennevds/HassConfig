@@ -8,3 +8,7 @@ mysensors1.pickle
 secrets.yaml
 tts
 www
+.HA_VERSION
+.uuid
+custom_components/sensor/buienradar.py
+custom_components/sensor/__pycache__
