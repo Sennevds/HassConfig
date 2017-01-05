@@ -1,0 +1,104 @@
+default_view:
+  view: yes
+  entities:
+    - group.lights
+    - group.Presence
+    - group.speedtest
+
+Lightsview:
+  name: Verlichting
+  view: yes
+  entities:
+    -  group.lights
+
+PageWeather:
+  name: Weer
+  view: yes
+  entities:
+    - group.Weather
+    - group.waqi
+
+Time:
+  name: Tijd & Datum
+  view: yes
+  entities:
+    - group.alarmclock
+    - group.datetime
+
+Presence:
+  name: Aanwezig
+  entities:
+    - device_tracker.10304769626f
+    - device_tracker.f8cfc592ad3d
+    - device_tracker.fcdbb331fe41
+    - device_tracker.6cadf8440641
+
+Weather:
+  name: Weather
+  entities:
+    - sensor.buienradar
+    - sensor.dark_sky_summary
+    - sensor.dark_sky_icon
+    - sensor.dark_sky_temperature
+    - sensor.dark_sky_wind_speed
+    - sensor.dark_sky_wind_bearing
+    - sensor.dark_sky_humidity
+    - sensor.dark_sky_daily_high_temperature
+    - sensor.dark_sky_daily_low_temperature
+    - sensor.dark_sky_precip_probability
+    - sensor.dark_sky_precip_intensity
+    - sensor.dark_sky_pressure
+    - sensor.dark_sky_apparent_temperature
+
+lights:
+  name: Alle lichten
+  entities:
+    - light.keuken_lamp
+    - light.eettafel_lamp
+    - switch.staande_lampen
+    - light.living_1
+    - light.slaapkamer
+
+scenes:
+  name: Scene's
+  entities:
+    - scene.alles_aan
+    - scene.alles_uit
+    - scene.film
+    - scene.slaapkamer_s_avonds
+    - scene.slaapkamer_s_ochtends
+
+speedtest:
+  name: Speedtest
+  entities:
+    - sensor.speedtest_ping
+    - sensor.speedtest_download
+    - sensor.speedtest_upload
+
+waqi:
+  name: WAQI
+  entities:
+    - sensor.waqi_antwerpen_park_spoor_noord
+    - sensor.waqi_antwerpen_luchtbal
+    - sensor.waqi_antwerpen_groenenborgerlaan
+    - sensor.waqi_antwerpen_boudewijnsluis
+    - sensor.waqi_antwerpen_belgieumllei
+    - sensor.waqi_antwerpenlinkeroever
+
+
+alarmclock:
+  name: Wake Me Up
+  entities:
+    - automation.wake_me_up
+    - sensor.alarm_time
+    - input_slider.alarmhour
+    - input_slider.alarmminutes
+    - input_boolean.alarmweekday
+
+datetime:
+  name: Date & Time
+  entities:
+    - sensor.time
+    - sensor.time__date
+    - sensor.date__time
+    - sensor.date

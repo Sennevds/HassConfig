@@ -1,0 +1,4 @@
+sensor.buienradar:
+  icon: mdi:weather-pouring
+switch.staande_lampen:
+  icon: mdi:lightbulb

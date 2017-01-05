@@ -1,0 +1,128 @@
+homeassistant:
+  # Name of the location where Home Assistant is running
+  name: Home
+  # Location required to calculate the time the sun rises and sets
+  latitude: 51.2181
+  longitude: 4.4414
+  # Impacts weather/sunrise data (altitude above sea level in meters)
+  elevation: 12
+  # metric for Metric, imperial for Imperial
+  unit_system: metric
+  # Pick yours from here: http://en.wikipedia.org/wiki/List_of_tz_database_time_zones
+  time_zone: Europe/Brussels
+  customize: !include configuration/customize.yaml
+
+
+# Enables the frontend
+frontend:
+
+http:
+  # Uncomment this to add a password (recommended!)
+  api_password: !secret http_password
+
+# Checks for available updates
+updater:
+
+# Discover some devices automatically
+discovery:
+
+tts:
+  - platform: google
+
+# Allows you to issue voice commands from the frontend in enabled browsers
+conversation:
+
+# View all events in a logbook
+logbook:
+
+# Track the sun
+sun:
+
+mqtt:
+  broker: 127.0.0.1
+  port: 1883
+  client_id: home-assistant-1
+  username: !secret mqtt_user
+  password: !secret mqtt_password
+
+zeroconf:
+
+logger:
+  default: debug
+  logs:
+    homeassistant.components: info
+    homeassistant.components.device_tracker.nmap_tracker: error
+    homeassistant.components.http: warning
+    homeassistant.components.rfxtrx: warning
+    custom_components: debug
+    llap.controller: debug
+    homeassistant.components.wemo: warning
+    mysensors.mysensors: debug
+
+
+device_tracker:
+  - platform: nmap_tracker
+    hosts: 192.168.0.1/24
+    track_new_devices: no
+
+group: !include configuration/groups.yaml
+automation: !include configuration/automation.yaml
+scene: !include configuration/scenes.yaml
+script: !include configuration/scripts.yaml
+sensor: !include configuration/sensors.yaml
+switch: !include configuration/switches.yaml
+
+media_player:
+  - platform: braviatv
+    host: 192.168.0.136
+
+upnp:
+
+rfxtrx:
+  device: /dev/ttyUSB0
+
+ifttt:
+  key: !secret ifttt_key
+
+input_slider:
+  alarmhour:
+    name: Hour
+    icon: mdi:timer
+    initial: 7
+    min: 0
+    max: 23
+    step: 1
+  alarmminutes:
+    name: Minutes
+    icon: mdi:timer
+    initial: 0
+    min: 0
+    max: 59
+    step: 5
+
+input_boolean:
+  alarmweekday:
+    name: Weekdays Only
+    initial: on
+    icon: mdi:calendar
+  flash_lights:
+    name: Flash lights
+    icon: mdi:pine-tree
+    initial: off
+  say:
+    name: Say something
+    initial: off
+
+notify:
+  - name: tele
+    platform: telegram
+    api_key: !secret telegram_api_key
+    chat_id: !secret telegram_chat_id
+
+mysensors:
+  gateways:
+    - device: mqtt
+      topic_in_prefix: 'mygateway1-out'
+      topic_out_prefix: 'mygateway1-in'
+  debug: true
+  version: 2.0

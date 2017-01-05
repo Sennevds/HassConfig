@@ -1,0 +1,47 @@
+- name: Film
+  entities:
+    switch.dj_staande_lamp: on
+    switch.eet_staande_lamp: off
+    switch.living_staande_lamp: off
+    light.keuken_lamp:
+      state: on
+      brightness: 100
+    light.eettafel_lamp:
+      state: on
+      brightness: 100
+
+- name: Alles uit
+  entities:
+    switch.dj_staande_lamp: off
+    switch.eet_staande_lamp: off
+    switch.living_staande_lamp: off
+    light.keuken_lamp:
+      state: off
+    light.eettafel_lamp:
+      state: off
+
+- name: Alles aan
+  entities:
+    switch.dj_staande_lamp: on
+    switch.eet_staande_lamp: on
+    switch.living_staande_lamp: on
+    light.keuken_lamp:
+      state: on
+      brightness: 255
+    light.eettafel_lamp:
+      state: on
+      brightness: 255
+
+- name: Slaapkamer 's avonds
+  entities:
+    light.slaapkamer:
+      state: on
+      color_temp: 40
+      #transition: 60
+      brightness: 25
+
+- name: Slaapkamer 's ochtends
+  entities:
+    light.slaapkamer:
+      state: on
+      brightness: 1

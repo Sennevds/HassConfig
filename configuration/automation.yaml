@@ -1,0 +1,138 @@
+- alias: "staande lampen uit"
+  trigger:
+    - platform: state
+      entity_id: switch.staande_lampen
+      from: "on"
+      to: "off"
+  action:
+    service: switch.turn_off
+    entity_id:
+      - switch.dj_staande_lamp
+      - switch.eet_staande_lamp
+      - switch.living_staande_lamp
+
+- alias: "staande lampen aan"
+  trigger:
+    - platform: state
+      entity_id: switch.staande_lampen
+      from: "off"
+      to: "on"
+  action:
+    service: switch.turn_on
+    entity_id:
+      - switch.dj_staande_lamp
+      - switch.eet_staande_lamp
+      - switch.living_staande_lamp
+
+- alias: "Movie time"
+  trigger:
+    - platform: event
+      event_type: button_pressed
+      event_data: {"entity_id": "switch.scene2", "state": "on"}
+  action:
+    - service: scene.turn_on
+      entity_id: scene.film
+
+- alias: "Movie time off"
+  trigger:
+    - platform: event
+      event_type: button_pressed
+      event_data: {"entity_id": "switch.scene2", "state": "off"}
+  action:
+    - service: scene.turn_on
+      entity_id: scene.alles_aan
+
+- alias: "Alles aan"
+  trigger:
+    - platform: event
+      event_type: button_pressed
+      event_data: {"entity_id": "switch.scene1", "state": "on"}
+  action:
+    - service: scene.turn_on
+      entity_id: scene.alles_aan
+
+- alias: "Alles uit"
+  trigger:
+    - platform: event
+      event_type: button_pressed
+      event_data: {"entity_id": "switch.scene1", "state": "off"}
+  action:
+    - service: scene.turn_on
+      entity_id: scene.alles_uit
+
+- alias: 'Wake Me Up'
+  trigger:
+    platform: template
+    value_template: '{{ states.sensor.time.state == states.sensor.alarm_time.state }}'
+  condition:
+    condition: or
+    conditions:
+      - condition: and
+        conditions:
+          - condition: state
+            entity_id: input_boolean.alarmweekday
+            state: 'on'
+          - condition: time
+            weekday:
+              - mon
+              - tue
+              - wed
+              - thu
+              - fri
+      - condition: state
+        entity_id: input_boolean.alarmweekday
+        state: 'off'
+  action:
+    - service: notify.tele
+      data_template:
+        message: 'Good morning. Time to Wake Up!'
+        title: ''
+    - service: homeassistant.turn_on
+      entity_id:
+        - light.slaapkamer
+      data:
+        state: 'on'
+        transition: 15
+        brightness: 75
+
+- alias: 'Start Flashing Lights'
+  trigger:
+    platform: state
+    entity_id: input_boolean.flash_lights
+    state: 'on'
+  action:
+    service: script.turn_on
+    entity_id: script.light_flash
+
+- alias: 'Stop Flashing Lights'
+  trigger:
+    platform: state
+    entity_id: input_boolean.flash_lights
+    state: 'off'
+  action:
+   service: script.turn_on
+   entity_id: script.light_flash_cancel
+
+- alias: 'iets lache'
+  trigger:
+    platform: state
+    entity_id: input_boolean.say
+    state: 'on'
+  action:
+    service: tts.google_say
+    entity_id: media_player.say
+    data:
+      message: 'May the Force be with you.'
+
+- alias: 'wall switch changed'
+  trigger:
+    platform: state
+    entity_id: switch.switch_0_1
+  action:
+    service_template: >
+      {%- if states('light.living_1') == 'off' -%}
+        homeassistant.turn_on
+      {%- else -%}
+        homeassistant.turn_off
+      {%- endif -%}
+    entity_id: light.living_1
