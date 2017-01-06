@@ -10,5 +10,4 @@ tts
 www
 .HA_VERSION
 .uuid
-custom_components/sensor/buienradar.py
 __pycache__
