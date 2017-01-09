@@ -125,7 +125,7 @@
   hide_entity: False
   trigger:
     - platform: state
-      entity_id: input_select.porch_led_effect
+      entity_id: input_select.cabinet_led_effect
   action:
     - service: mqtt.publish
       data_template:
@@ -137,7 +137,7 @@
   hide_entity: False
   trigger:
     - platform: state
-      entity_id: input_slider.porch_animation_speed
+      entity_id: input_slider.cabinet_animation_speed
   action:
     - service: mqtt.publish
       data_template:

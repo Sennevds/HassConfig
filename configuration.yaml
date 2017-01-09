@@ -19,8 +19,6 @@ frontend:
 http:
   # Uncomment this to add a password (recommended!)
   api_password: !secret http_password
-  ssl_certificate: !secret ssl_certificate
-  ssl_key: !secret ssl_key
 
 # Checks for available updates
 updater:
