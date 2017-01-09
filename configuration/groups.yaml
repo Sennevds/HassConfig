@@ -26,6 +26,15 @@ Time:
     - group.alarmclock
     - group.datetime
 
+debug:
+  name: debug
+  view: yes
+  entities:
+    - switch.switch_0_2                                                                                                                                                                                           
+    - switch.switch_0_1
+    - light.switch_0_0
+    - light.rgbligttest_0_5
+
 Presence:
   name: Aanwezig
   entities:
