@@ -124,6 +124,6 @@ configuration:
 ledstrip:
   name: ledstrip kast
   entities:
-    - light.cabinet_leds
+    - light.kast_leds
     - input_select.cabinet_led_effect
     - input_slider.cabinet_animation_speed
