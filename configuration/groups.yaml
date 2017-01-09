@@ -10,7 +10,8 @@ Lightsview:
   name: Verlichting
   view: yes
   entities:
-    -  group.lights
+    - group.lights
+    - group.ledstrip
 
 PageWeather:
   name: Weer
@@ -116,8 +117,9 @@ datetime:
 configuration:
   name: config
   entities:
-    - scripts.update_config
+    - script.update_config
     - sensor.command_sensor
+
 
 ledstrip:
   name: ledstrip kast
