@@ -95,23 +95,6 @@
         transition: 15
         brightness: 75
 
-- alias: 'Start Flashing Lights'
-  trigger:
-    platform: state
-    entity_id: input_boolean.flash_lights
-    state: 'on'
-  action:
-    service: script.turn_on
-    entity_id: script.light_flash
-
-- alias: 'Stop Flashing Lights'
-  trigger:
-    platform: state
-    entity_id: input_boolean.flash_lights
-    state: 'off'
-  action:
-   service: script.turn_on
-   entity_id: script.light_flash_cancel
 
 - alias: 'iets lache'
   trigger:
@@ -136,3 +119,27 @@
         homeassistant.turn_off
       {%- endif -%}
     entity_id: light.living_1
+
+- alias: "Porch Input Effect"
+  initial_state: True
+  hide_entity: False
+  trigger:
+    - platform: state
+      entity_id: input_select.porch_led_effect
+  action:
+    - service: mqtt.publish
+      data_template:
+        topic: "hass/mqttstrip/seteffect"
+        payload: '{{ trigger.to_state.state | string }}'
+
+- alias: "Porch Animation Speed"
+  initial_state: True
+  hide_entity: False
+  trigger:
+    - platform: state
+      entity_id: input_slider.porch_animation_speed
+  action:
+    - service: mqtt.publish
+      data_template:
+        topic: "hass/mqttstrip/setanimationspeed"
+        payload: '{{ trigger.to_state.state | int }}'

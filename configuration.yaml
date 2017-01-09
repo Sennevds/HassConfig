@@ -71,6 +71,9 @@ scene: !include configuration/scenes.yaml
 script: !include configuration/scripts.yaml
 sensor: !include configuration/sensors.yaml
 switch: !include configuration/switches.yaml
+input_slider: !include configuration/input_slider.yaml
+input_select: !include configuration/input_select.yaml
+input_boolean: !include configuration/input_boolean.yaml
 
 media_player:
   - platform: braviatv
@@ -84,34 +87,6 @@ rfxtrx:
 ifttt:
   key: !secret ifttt_key
 
-input_slider:
-  alarmhour:
-    name: Hour
-    icon: mdi:timer
-    initial: 7
-    min: 0
-    max: 23
-    step: 1
-  alarmminutes:
-    name: Minutes
-    icon: mdi:timer
-    initial: 0
-    min: 0
-    max: 59
-    step: 5
-
-input_boolean:
-  alarmweekday:
-    name: Weekdays Only
-    initial: on
-    icon: mdi:calendar
-  flash_lights:
-    name: Flash lights
-    icon: mdi:pine-tree
-    initial: off
-  say:
-    name: Say something
-    initial: off
 
 notify:
   - name: tele

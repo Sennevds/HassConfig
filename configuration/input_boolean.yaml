@@ -1,0 +1,7 @@
+alarmweekday:
+  name: Weekdays Only
+  initial: on
+  icon: mdi:calendar
+say:
+  name: Say something
+  initial: off
