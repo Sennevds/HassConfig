@@ -12,8 +12,8 @@ alarmminutes:
   min: 0
   max: 59
   step: 5
-porch_animation_speed:
-  name: Porch Animation Speed
+cabinet_animation_speed:
+  name: Kast animatie snelheid
   initial: 150
   min: 1
   max: 150

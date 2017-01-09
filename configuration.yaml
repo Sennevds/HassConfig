@@ -71,6 +71,7 @@ scene: !include configuration/scenes.yaml
 script: !include configuration/scripts.yaml
 sensor: !include configuration/sensors.yaml
 switch: !include configuration/switches.yaml
+light: !include configuration/light.yaml
 input_slider: !include configuration/input_slider.yaml
 input_select: !include configuration/input_select.yaml
 input_boolean: !include configuration/input_boolean.yaml

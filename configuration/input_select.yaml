@@ -1,5 +1,5 @@
-porch_led_effect:
-  name: Porch LED Effect
+cabinet_led_effect:
+  name: Kast LED effect
   options:
    - "BPM"
    - "Candy Cane"

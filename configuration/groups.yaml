@@ -30,7 +30,7 @@ debug:
   name: debug
   view: yes
   entities:
-    - switch.switch_0_2                                                                                                                                                                                           
+    - switch.switch_0_2
     - switch.switch_0_1
     - light.switch_0_0
     - light.rgbligttest_0_5
@@ -117,3 +117,11 @@ configuration:
   name: config
   entities:
     - scripts.update_config
+    - sensor.command_sensor
+
+ledstrip:
+  name: ledstrip kast
+  entities:
+    - light.cabinet_leds
+    - input_select.cabinet_led_effect
+    - input_slider.cabinet_animation_speed
