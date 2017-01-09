@@ -1,35 +1,4 @@
-# START FLASH
-light_flash:
-  alias: Light flash on
+update_config:
   sequence:
-    - service: light.turn_on
-      data:
-        entity_id: light.keuken_lamp
-        flash: short
-    - service: light.turn_on
-      data:
-        entity_id: light.eettafel_lamp
-        flash: short
-    - service: script.turn_on
-      data:
-        entity_id: script.light_loop
-# LOOP BACK TO START FLASH AGAIN
-light_loop:
-  alias: Light flash loop
-  sequence:
-    - delay:
-#### time for flash light off
-        seconds: 0.5
-    - service: script.turn_on
-      data:
-        entity_id: script.light_flash
-# CANCEL FLASHING
-light_flash_cancel:
-  alias: Cancel Light Flash
-  sequence:
-    -  service: script.turn_off
-       data:
-         entity_id: script.light_flash
-    -  service: script.turn_off
-       data:
-         entity_id: script.light_loop
+    - service: shell_command.get_latest_config
+    - service: homeassistant.restart

@@ -4,6 +4,7 @@ default_view:
     - group.lights
     - group.Presence
     - group.speedtest
+    - group.configuration
 
 Lightsview:
   name: Verlichting
@@ -102,3 +103,8 @@ datetime:
     - sensor.time__date
     - sensor.date__time
     - sensor.date
+
+configuration:
+  name: config
+  entities:
+    - scripts.update_config
