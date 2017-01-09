@@ -7,3 +7,5 @@ echo "ifttt_key: dummy" >> $TRAVIS_BUILD_DIR/secrets.yaml
 echo "telegram_api_key: dummy" >> $TRAVIS_BUILD_DIR/secrets.yaml
 echo "telegram_chat_id: dummy" >> $TRAVIS_BUILD_DIR/secrets.yaml
 echo "darksky_api_key: dummy" >> $TRAVIS_BUILD_DIR/secrets.yaml
+echo "ssl_certificate: dummy" >> $TRAVIS_BUILD_DIR/secrets.yaml
+echo "ssl_key: dummy" >> $TRAVIS_BUILD_DIR/secrets.yaml
