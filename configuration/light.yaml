@@ -1,5 +1,5 @@
 - platform: mqtt
-  name: "Cabinet LEDs"
+  name: "Kast LEDs"
   command_topic: "hass/mqttstrip/setpower"
   state_topic: "hass/mqttstrip/setpowerpub"
   rgb_state_topic: "hass/mqttstrip/setcolorpub"
