@@ -107,6 +107,7 @@ waqi:
 alarmclock:
   name: Wake Me Up
   entities:
+    - input_boolean.alarm
     - automation.wake_me_up
     - sensor.alarm_time
     - input_slider.alarmhour
