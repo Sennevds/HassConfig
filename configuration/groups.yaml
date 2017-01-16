@@ -43,6 +43,14 @@ debug:
     - light.rgbligttest_0_5
     - input_boolean.say
 
+media_players:
+  name: Media Players
+  view: yes
+  entities:
+    - media_player.sony_bravia_tv
+    - media_player.teichmann
+    - media_player.teichmann_audio
+
 Presence:
   name: Aanwezig
   entities:
