@@ -126,6 +126,7 @@ configuration:
   name: config
   entities:
     - script.update_config
+    - script.update_and_restart
     - sensor.command_sensor
 
 
