@@ -79,9 +79,17 @@
               - wed
               - thu
               - fri
-      - condition: state
-        entity_id: input_boolean.alarmweekday
-        state: 'off'
+          - condition: state
+            entity_id: input_boolean.alarm
+            state: 'on'
+      - condition: and
+        conditions:
+          - condition: state
+            entity_id: input_boolean.alarmweekday
+            state: 'off'
+          - condition: state
+            entity_id: input_boolean.alarm
+            state: 'on'
   action:
     - service: notify.tele
       data_template:

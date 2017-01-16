@@ -5,3 +5,7 @@ alarmweekday:
 say:
   name: Say something
   initial: off
+alarm:
+  name: alarm
+  initial: off
+  icon: mdi:Alarm
