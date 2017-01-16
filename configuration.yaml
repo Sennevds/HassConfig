@@ -105,7 +105,7 @@ mysensors:
   version: 2.0
 
 shell_command:
-  get_latest_config: bash /home/hass/.homeassistant/bin/pullconfig.sh
+  get_latest_config: 'bash /home/hass/.homeassistant/bin/pullconfig.sh'
 
 camera:
   name: Senne
