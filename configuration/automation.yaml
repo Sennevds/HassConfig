@@ -103,9 +103,9 @@
     state: 'on'
   action:
     service: tts.google_say
-    entity_id: media_player.say
+    entity_id: media_player.teichmann_audio
     data:
-      message: 'May the Force be with you.'
+      message: 'lisa you look awful' #'There''s someone at the door'
 
 - alias: 'wall switch changed'
   trigger:
