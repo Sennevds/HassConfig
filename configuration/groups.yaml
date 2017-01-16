@@ -27,12 +27,6 @@ Time:
     - group.alarmclock
     - group.datetime
 
-Map:
-  name: Map
-  view: yes
-  entities:
-    - camera.senne
-
 debug:
   name: debug
   view: yes

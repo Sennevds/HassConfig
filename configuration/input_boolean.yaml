@@ -8,4 +8,4 @@ say:
 alarm:
   name: alarm
   initial: off
-  icon: mdi:Alarm
+  icon: mdi:alarm
