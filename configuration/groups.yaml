@@ -12,6 +12,9 @@ Lightsview:
   entities:
     - group.lights
     - group.ledstrip
+    - group.staande_lampen
+    - group.hue_lights
+    - group.wemo_lights
 
 PageWeather:
   name: Weer
@@ -138,3 +141,22 @@ ledstrip:
     - light.kast_leds
     - input_select.cabinet_led_effect
     - input_slider.cabinet_animation_speed
+
+staande_lampen:
+  name: Staande lampen
+  entities:
+    - switch.living_staande_lamp
+    - switch.dj_staande_lamp
+    - switch.eet_staande_lamp
+
+wemo_lights:
+  name: Wemo lights
+  entities:
+    - light.living_1
+    - light.slaapkamer
+
+hue_lights:
+  name: Hue lights
+  entities:
+    - light.eettafel_lamp
+    - light.keuken_lamp
