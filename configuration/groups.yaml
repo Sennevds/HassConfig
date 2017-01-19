@@ -87,7 +87,7 @@ lights:
     - light.living_1
     - light.slaapkamer
 
-scenes:
+scene:
   name: Scene's
   entities:
     - scene.alles_aan
