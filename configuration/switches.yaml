@@ -2,13 +2,13 @@
   automatic_add: True
   devices:
     0b11000000f5f11e01010f50:
-      name: staande_lampen
+      name: Staande lampen
     0b11000103bc0cfe01010f70:
-      name: living_staande_lamp
+      name: Living staande lamp
     0b11000124bc0cfe03010f70:
-      name: dj_staande_lamp
+      name: DJ staande lamp
     0b11000622bc0cfe04010f70:
-      name: eet_staande_lamp
+      name: Eet staande lamp
     0b11000600f5f11e02010f50:
       name: scene1
       fire_event: True
