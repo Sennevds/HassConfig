@@ -30,6 +30,14 @@ Time:
     - group.alarmclock
     - group.datetime
 
+media_players:
+  name: Media Players
+  view: yes
+  entities:
+    - media_player.sony_bravia_tv
+    - media_player.teichmann
+    - media_player.teichmann_audio
+
 debug:
   name: debug
   view: yes
@@ -39,14 +47,11 @@ debug:
     - light.switch_0_0
     - light.rgbligttest_0_5
     - input_boolean.say
-
-media_players:
-  name: Media Players
+scenes:
+  name: scene
   view: yes
   entities:
-    - media_player.sony_bravia_tv
-    - media_player.teichmann
-    - media_player.teichmann_audio
+    - group.scenes
 
 Presence:
   name: Aanwezig
@@ -82,7 +87,7 @@ lights:
     - light.living_1
     - light.slaapkamer
 
-scenes:
+scene:
   name: Scene's
   entities:
     - scene.alles_aan
@@ -90,6 +95,8 @@ scenes:
     - scene.film
     - scene.slaapkamer_s_avonds
     - scene.slaapkamer_s_ochtends
+    - scene.TV_alleen_thuis
+    - scene.Gezellig_tafelen
 
 speedtest:
   name: Speedtest

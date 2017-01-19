@@ -45,3 +45,31 @@
     light.slaapkamer:
       state: on
       brightness: 1
+
+- name: TV alleen thuis
+  entities:
+    switch.eet_staande_lamp:
+      state: off
+    light.eettafel_lamp:
+      state: off
+    switch.living_staande_lamp:
+      state: on
+    light.keuken_lamp:
+      state: on
+      brightness: 75
+    switch.dj_staande_lamp:
+      state: off
+
+- name: Gezellig tafelen
+  entities:
+    switch.eet_staande_lamp:
+      state: on
+    light.eettafel_lamp:
+      state: on
+      brightness: 157
+    switch.living_staande_lamp:
+      state: off
+    light.keuken_lamp:
+      state: off
+    switch.dj_staande_lamp:
+      state: on
