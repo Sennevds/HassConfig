@@ -48,7 +48,7 @@ debug:
     - light.rgbligttest_0_5
     - input_boolean.say
 
-scenes:
+scenesview:
   name: scene
   view: yes
   entities:
@@ -88,7 +88,7 @@ lights:
     - light.living_1
     - light.slaapkamer
 
-scene:
+scenes:
   name: Scene's
   entities:
     - scene.alles_aan
