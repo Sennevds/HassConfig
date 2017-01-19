@@ -95,8 +95,8 @@ scene:
     - scene.film
     - scene.slaapkamer_s_avonds
     - scene.slaapkamer_s_ochtends
-    - scene.TV_alleen_thuis
-    - scene.Gezellig_tafelen
+    - scene.tv_alleen_thuis
+    - scene.gezellig_tafelen
 
 speedtest:
   name: Speedtest
