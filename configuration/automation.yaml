@@ -151,3 +151,12 @@
       data_template:
         topic: "hass/mqttstrip/setanimationspeed"
         payload: '{{ trigger.to_state.state | int }}'
+
+- alias: Update notifications
+  trigger:
+    - platform: state
+      entity_id: updater.updater
+  action:
+    service: notify.tele
+    data:
+      message: 'There is a new Home Assistant release available.'
