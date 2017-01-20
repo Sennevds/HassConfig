@@ -111,3 +111,8 @@ mysensors:
 
 shell_command:
   get_latest_config: 'bash /home/hass/.homeassistant/bin/pullconfig.sh'
+
+panel_iframe:
+  agenda:
+    title: 'agenda'
+    url: '<iframe src="https://calendar.google.com/calendar/embed?title=Feestjes&amp;showPrint=0&amp;showCalendars=0&amp;showTz=0&amp;mode=WEEK&amp;height=600&amp;wkst=2&amp;bgcolor=%23FFFFFF&amp;src=a48263pavosdrj4me286f9i29k%40group.calendar.google.com&amp;color=%2323164E&amp;ctz=Europe%2FBrussels" style="border-width:0" width="800" height="600" frameborder="0" scrolling="no"></iframe>'
