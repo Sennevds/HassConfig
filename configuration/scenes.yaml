@@ -73,3 +73,27 @@
       state: off
     switch.dj_staande_lamp:
       state: on
+
+- name: Party
+  entities:
+    switch.laser:
+      state: on
+    switch.living_staande_lamp:
+      state: off
+    switch.dj_staande_lamp:
+      state: off
+    light.kast_leds:
+      state: on
+      brightness: 255
+    light.eettafel_lamp:
+      state: off
+      brightness: 254
+    light.keuken_lamp:
+      state: off
+      brightness: 254
+    switch.eet_staande_lamp:
+      state: off
+    input_select.cabinet_led_effect:
+      option: "Cyclon Rainbow"
+    input_slider.cabinet_animation_speed:
+      value: 21.0
