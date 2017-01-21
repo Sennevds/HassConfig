@@ -15,6 +15,7 @@ Lightsview:
     - group.staande_lampen
     - group.hue_lights
     - group.wemo_lights
+    - switch.laser
 
 PageWeather:
   name: Weer
