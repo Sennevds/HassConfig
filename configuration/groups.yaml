@@ -99,6 +99,7 @@ scenes:
     - scene.slaapkamer_s_ochtends
     - scene.tv_alleen_thuis
     - scene.gezellig_tafelen
+    - scene.party
 
 speedtest:
   name: Speedtest
