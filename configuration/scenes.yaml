@@ -87,10 +87,10 @@
       brightness: 255
     light.eettafel_lamp:
       state: off
-      brightness: 254
+      brightness: 0
     light.keuken_lamp:
       state: off
-      brightness: 254
+      brightness: 0
     switch.eet_staande_lamp:
       state: off
     input_select.cabinet_led_effect:
