@@ -17,6 +17,8 @@
       fire_event: True
     7100a0341040000:
       name: kerst
+    7100a0041030000:
+      name: laser
 
 - platform: srf
   port: /dev/ttyS0
