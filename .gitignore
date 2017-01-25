@@ -4,6 +4,7 @@ deps
 home-assistant.log
 home-assistant_v2.db
 known_devices.yaml
+google_calendars.yaml
 mysensors1.pickle
 secrets.yaml
 tts

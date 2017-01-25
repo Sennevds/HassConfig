@@ -7,3 +7,14 @@
   brightness_state_topic: "hass/mqttstrip/setbrightnesspub"
   brightness_command_topic: "hass/mqttstrip/setbrightness"
   optimistic: false
+
+
+# - platform: mqtt_template
+#   name: "Kast LEDs2"
+#   command_topic: "hass/mqttstrip/setpower"
+#   state_topic: "hass/mqttstrip/setpowerpub"
+#   rgb_state_topic: "hass/mqttstrip/setcolorpub"
+#   rgb_command_topic: "hass/mqttstrip/setcolor"
+#   brightness_state_topic: "hass/mqttstrip/setbrightnesspub"
+#   brightness_command_topic: "hass/mqttstrip/setbrightness"
+#   optimistic: false
