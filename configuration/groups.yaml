@@ -5,7 +5,7 @@ default_view:
     - group.Presence
     - group.speedtest
     - group.configuration
-    - calendar.feestje_en_shit
+    - group.calendar
 
 Lightsview:
   name: Verlichting
@@ -171,3 +171,12 @@ hue_lights:
   entities:
     - light.eettafel_lamp
     - light.keuken_lamp
+
+calendar:
+  name: agenda
+  entities:
+    - event_title
+    - event_description
+    - event_allday
+    - event_start
+    - event_end
