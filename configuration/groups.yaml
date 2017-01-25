@@ -175,8 +175,8 @@ hue_lights:
 calendar:
   name: agenda
   entities:
-    - event_title
-    - event_description
-    - event_allday
-    - event_start
-    - event_end
+    - sensor.event_title
+    - sensor.event_description
+    - sensor.event_allday
+    - sensor.event_start
+    - sensor.event_end
