@@ -19,6 +19,8 @@
       state: off
     light.eettafel_lamp:
       state: off
+    light.kast_leds: off
+    switch.laser: off
 
 - name: Alles aan
   entities:
@@ -59,6 +61,9 @@
       brightness: 75
     switch.dj_staande_lamp:
       state: off
+    light.kast_leds:
+      state: on
+      brightness: 255
 
 - name: Gezellig tafelen
   entities:
@@ -71,8 +76,11 @@
       state: off
     light.keuken_lamp:
       state: off
+      brightness: 100
     switch.dj_staande_lamp:
       state: on
+    light.kast_leds: off
+    switch.laser: off
 
 - name: Party
   entities:

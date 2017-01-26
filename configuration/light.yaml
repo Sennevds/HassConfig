@@ -9,12 +9,42 @@
   optimistic: false
 
 
-# - platform: mqtt_template
-#   name: "Kast LEDs2"
-#   command_topic: "hass/mqttstrip/setpower"
-#   state_topic: "hass/mqttstrip/setpowerpub"
-#   rgb_state_topic: "hass/mqttstrip/setcolorpub"
-#   rgb_command_topic: "hass/mqttstrip/setcolor"
-#   brightness_state_topic: "hass/mqttstrip/setbrightnesspub"
-#   brightness_command_topic: "hass/mqttstrip/setbrightness"
-#   optimistic: false
+- platform: mqtt_template
+  name: "Kast LEDs2"
+  effect_list:
+    - Rainbow
+    - Solid
+  command_topic: "hass/secondstrip/setpower"
+  state_topic: "hass/secondstrip/setpowerpub"
+  command_on_template: >
+    {"state": "on"
+    {%- if brightness is defined -%}
+    , "brightness": {{ brightness }}
+    {%- endif -%}
+    {%- if red is defined and green is defined and blue is defined -%}
+    , "color": [{{ red }}, {{ green }}, {{ blue }}]
+    {%- endif -%}
+    {%- if effect is defined -%}
+    , "effect": "{{ effect }}"
+    {%- endif -%}
+    }
+  command_off_template: '{"state": "off"}'
+  state_template: '{{ value_json.state }}'
+  brightness_template: '{{ value_json.brightness }}'
+  red_template: '{{ value_json.color[0] }}'
+  green_template: '{{ value_json.color[1] }}'
+  blue_template: '{{ value_json.color[2] }}'
+  effect_template: '{{ value_json.effect }}'
+
+
+# - alias: "Porch Input Effect"
+#   initial_state: True
+#   hide_entity: False
+#   trigger:
+#     - platform: state
+#       entity_id: input_select.cabinet_led_effect
+#   action:
+#     - service: mqtt.publish
+#       data_template:
+#         topic: "hass/mqttstrip/seteffect"
+#         payload: '{{ trigger.to_state.state | string }}'
