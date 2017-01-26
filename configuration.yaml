@@ -116,6 +116,12 @@ panel_iframe:
   agenda:
     title: 'agenda'
     url: 'https://calendar.google.com/calendar/embed?src=a48263pavosdrj4me286f9i29k%40group.calendar.google.com&ctz=Europe/Brussels'
+  telenet:
+    title: 'telenet'
+    url: 'https://mijn.telenet.be/mijntelenet/navigation/navigation.do?family=internet&identifier=none'
+  switch:
+    title: 'switch'
+    url: 'http://192.168.0.99/'
 
 google:
   client_id: !secret google_client_id
