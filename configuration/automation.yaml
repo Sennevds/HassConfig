@@ -152,7 +152,7 @@
         topic: "hass/mqttstrip/setanimationspeed"
         payload: '{{ trigger.to_state.state | int }}'
 
-- alias: Update notifications
+- alias: 'Update notifications'
   trigger:
     - platform: state
       entity_id: updater.updater
