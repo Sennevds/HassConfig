@@ -176,7 +176,7 @@
   trigger:
     platform: numeric_state
     entity_id: sensor.command_sensor
-    above: 1
+    above: 0
   action:
     - service: script.turn_on
       entity_id:
