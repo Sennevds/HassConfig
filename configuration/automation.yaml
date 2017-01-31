@@ -95,11 +95,10 @@
       data_template:
         message: 'Good morning. Time to Wake Up!'
         title: ''
-    - service: homeassistant.turn_on
+    - service: light.turn_on
       entity_id:
         - light.slaapkamer
       data:
-        state: 'on'
         transition: 15
         brightness: 75
 
@@ -160,3 +159,15 @@
     service: notify.tele
     data:
       message: 'There is a new Home Assistant release available.'
+
+- alias: 'Wake Me Up'
+  trigger:
+    platform: state
+    entity_id: switch.test
+  action:
+    - service: light.turn_on
+      entity_id:
+        - light.living_1
+      data:
+        transition: 15
+        brightness: 75

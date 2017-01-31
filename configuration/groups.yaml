@@ -50,6 +50,7 @@ debug:
     - light.rgbligttest_0_5
     - input_boolean.say
     - light.kast_leds2
+    - switch.test
 
 scenesview:
   name: scene

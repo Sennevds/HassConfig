@@ -9,3 +9,7 @@ alarm:
   name: alarm
   initial: off
   icon: mdi:alarm
+
+test:
+  name: test
+  initial: off
