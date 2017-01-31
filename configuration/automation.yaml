@@ -160,7 +160,7 @@
     data:
       message: 'There is a new Home Assistant release available.'
 
-- alias: 'Wake Me Up'
+- alias: 'test automation'
   trigger:
     platform: state
     entity_id: switch.test
@@ -171,3 +171,13 @@
       data:
         transition: 15
         brightness: 75
+
+- alias: 'update config'
+  trigger:
+    platform: numeric_state
+    entity_id: sensor.command_sensor
+    above: 1
+  action:
+    - service: script.turn_on
+      entity_id:
+        - script.update_and_restart
