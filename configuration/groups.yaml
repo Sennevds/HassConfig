@@ -24,6 +24,7 @@ PageWeather:
   entities:
     - group.Weather
     - group.waqi
+    - camera.generic_camera
 
 Time:
   name: Tijd & Datum
