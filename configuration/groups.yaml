@@ -24,7 +24,7 @@ PageWeather:
   entities:
     - group.Weather
     - group.waqi
-    - camera.generic_camera
+    - group.buienradar
 
 Time:
   name: Tijd & Datum
@@ -70,7 +70,6 @@ Presence:
 Weather:
   name: Weather
   entities:
-    - sensor.buienradar
     - sensor.dark_sky_summary
     - sensor.dark_sky_icon
     - sensor.dark_sky_temperature
@@ -83,6 +82,12 @@ Weather:
     - sensor.dark_sky_precip_intensity
     - sensor.dark_sky_pressure
     - sensor.dark_sky_apparent_temperature
+
+Buienradar:
+  name: Buienradar
+  entities:
+    - sensor.buienradar
+    - camera.generic_camera
 
 lights:
   name: Alle lichten
