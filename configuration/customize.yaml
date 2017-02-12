@@ -5,7 +5,7 @@
 
 - entity_id: light.eettafel_lamp, light.bureau, light.kast_leds2, light.keuken_lamp, light.living_1, light.slaapkamer, light.kast_leds
   custom_ui_state_card: custom_light
-  state_card_mode: break-slider-toggle
+  state_card_mode: break-slider
   slider_theme:
     min: 0
     max: 255
