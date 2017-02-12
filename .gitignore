@@ -8,7 +8,8 @@ google_calendars.yaml
 mysensors1.pickle
 secrets.yaml
 tts
-www
+www/*.jpg
+www/*.png
 .HA_VERSION
 .uuid
 __pycache__
