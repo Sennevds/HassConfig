@@ -20,7 +20,7 @@
     7100a0041030000:
       name: laser
     7100a0041040000:
-      name: Telenet-router
+      name: Telenet router
 
 - platform: srf
   port: /dev/ttyS0
