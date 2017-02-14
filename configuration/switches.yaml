@@ -15,12 +15,11 @@
     0b11000100f5f11e03000060:
       name: scene2
       fire_event: True
-    7100a0341040000:
-      name: kerst
     7100a0041030000:
       name: laser
     7100a0041040000:
       name: Telenet router
+
 
 - platform: srf
   port: /dev/ttyS0
