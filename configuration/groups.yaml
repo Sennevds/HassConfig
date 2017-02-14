@@ -63,7 +63,7 @@ scenesview:
 Presence:
   name: Aanwezig
   entities:
-    - device_tracker.10304769626f
+    - device_tracker.84986656b681
     - device_tracker.f8cfc592ad3d
     - device_tracker.fcdbb331fe41
     - device_tracker.6cadf8440641
