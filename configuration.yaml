@@ -53,7 +53,7 @@ zeroconf:
 logger:
   default: debug
   logs:
-    homeassistant.components: info
+    homeassistant.components: error
     homeassistant.components.device_tracker.nmap_tracker: error
     homeassistant.components.http: warning
     homeassistant.components.rfxtrx: warning

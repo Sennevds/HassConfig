@@ -52,7 +52,7 @@ debug:
     - input_boolean.say
     - light.kast_leds2
     - switch.test
-    - switch.telenetrouter
+    - switch.telenet_router
 
 scenesview:
   name: scene
