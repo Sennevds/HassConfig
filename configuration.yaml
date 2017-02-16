@@ -51,15 +51,12 @@ mqtt:
 zeroconf:
 
 logger:
-  default: debug
+  default: error
   logs:
-    homeassistant.components: error
-    homeassistant.components.device_tracker.nmap_tracker: error
     homeassistant.components.http: warning
     homeassistant.components.rfxtrx: warning
     custom_components: debug
     llap.controller: debug
-    homeassistant.components.wemo: warning
     mysensors.mysensors: debug
 
 
