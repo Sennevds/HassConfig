@@ -1,9 +1,9 @@
-- entity_id: sensor.buienradar
+sensor.buienradar:
   icon: mdi:weather-pouring
-- entity_id: switch.staande_lampen
+switch.staande_lampen:
   icon: mdi:lightbulb
 
-- entity_id: light.eettafel_lamp #, light.bureau, light.kast_leds2, light.keuken_lamp, light.living_1, light.slaapkamer, light.kast_leds
+light.eettafel_lamp: #, light.bureau, light.kast_leds2, light.keuken_lamp, light.living_1, light.slaapkamer, light.kast_leds
   custom_ui_state_card: custom_light
   state_card_mode: break-slider
   slider_theme:
