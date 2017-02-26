@@ -19,6 +19,7 @@
 - platform: waqi
   locations:
     - antwerp
+  token: fdeb7727712ee3555f53e8db76338e2053c7baee
 - platform: speedtest
   server_id: 2955
   monitored_conditions:
