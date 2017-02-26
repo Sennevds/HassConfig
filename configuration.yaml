@@ -23,6 +23,7 @@ http:
 # Checks for available updates
 updater:
 
+config:
 # Discover some devices automatically
 discovery:
 
