@@ -11,7 +11,6 @@ Lightsview:
   name: Verlichting
   view: yes
   entities:
-    - group.lights
     - group.ledstrip
     - group.staande_lampen
     - group.hue_lights
