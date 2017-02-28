@@ -29,6 +29,10 @@ frontend:
 http:
   # Uncomment this to add a password (recommended!)
   api_password: !secret http_password
+  trusted_networks:
+    - 127.0.0.1
+    - ::1
+    - 192.168.0.0/24
 
 # Checks for available updates
 updater:
