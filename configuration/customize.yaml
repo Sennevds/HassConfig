@@ -2,14 +2,3 @@ sensor.buienradar:
   icon: mdi:weather-pouring
 switch.staande_lampen:
   icon: mdi:lightbulb
-
-customize_glob:
-  "light.*":
-    custom_ui_state_card: custom_light
-    state_card_mode: break-slider
-    slider_theme:
-      min: 0
-      max: 255
-      pin: true
-      off_when_min: false
-      report_when_not_changed: false
