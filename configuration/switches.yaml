@@ -3,6 +3,7 @@
   devices:
     0b11000000f5f11e01010f50:
       name: Staande lampen
+      fire_event: True
     0b11000103bc0cfe01010f70:
       name: Living staande lamp
     0b11000124bc0cfe03010f70:
