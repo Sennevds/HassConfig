@@ -5,7 +5,7 @@ default_view:
     - group.Presence
     - group.speedtest
     - group.configuration
-    - group.calendar
+    # - group.calendar
 
 Lightsview:
   name: Verlichting
