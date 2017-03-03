@@ -196,3 +196,27 @@
     service: notify.tele
     data:
       message: 'Switch beneden is offline!'
+
+- alias: "People Entered."
+  trigger:
+    - platform: state
+      entity_id: device_tracker.84986656b681
+      from: 'not_home'
+      to: 'home'
+    - platform: state
+      entity_id: device_tracker.f8cfc592ad3d
+      from: 'not_home'
+      to: 'home'
+    - platform: state
+      entity_id: device_tracker.fcdbb331fe41
+      from: 'not_home'
+      to: 'home'
+    - platform: state
+      entity_id: device_tracker.6cadf8440641
+      from: 'not_home'
+      to: 'home'
+  action:
+    - service: notify.tele
+      data_template:
+        message: >
+          This Person Entered: '{{ trigger.to_state.attributes.friendly_name }}'
