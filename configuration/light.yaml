@@ -12,8 +12,24 @@
 - platform: mqtt_template
   name: "Kast LEDs2"
   effect_list:
-    - Rainbow
-    - Solid
+    - "BPM"
+    - "Candy Cane"
+    - "Confetti"
+    - "Cyclon Rainbow"
+    - "Dots"
+    - "Fire"
+    - "Glitter"
+    - "Juggle"
+    - "Lightning"
+    - "Noise"
+    - "Police All"
+    - "Police One"
+    - "Rainbow"
+    - "Rainbow with Glitter"
+    - "Ripple"
+    - "Sinelon"
+    - "Solid"
+    - "Twinkle"
   command_topic: "hass/secondstrip/setpower"
   state_topic: "hass/secondstrip/setpowerpub"
   command_on_template: >
