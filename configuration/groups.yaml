@@ -95,6 +95,7 @@ lights:
     - light.keuken_lamp
     - light.eettafel_lamp
     - switch.staande_lampen
+    - input_boolean.lampen
     - light.living_1
     - light.slaapkamer
 

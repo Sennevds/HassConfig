@@ -3,6 +3,13 @@
     - platform: event
       event_type: button_pressed
       event_data: {"entity_id": "switch.staande_lampen", "state": "off"}
+    - platform: state
+      entity_id: input_boolean.lampen
+      state: 'off'
+    - platform: state
+      entity_id: switch.staande_lampen
+      from: "on"
+      to: "off"
   action:
     service: switch.turn_off
     entity_id:
@@ -15,10 +22,13 @@
     - platform: event
       event_type: button_pressed
       event_data: {"entity_id": "switch.staande_lampen", "state": "on"}
-    # - platform: state
-    #   entity_id: switch.staande_lampen
-    #   from: "off"
-    #   to: "on"
+    - platform: state
+      entity_id: input_boolean.lampen
+      state: 'on'
+    - platform: state
+      entity_id: switch.staande_lampen
+      from: "off"
+      to: "on"
   action:
     service: switch.turn_on
     entity_id:

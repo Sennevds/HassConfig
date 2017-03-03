@@ -13,3 +13,8 @@ alarm:
 test:
   name: test
   initial: off
+
+lampen:
+  name: De 3 lampen
+  initial: off
+  icon: mdi:lamp
