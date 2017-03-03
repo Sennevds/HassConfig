@@ -13,7 +13,7 @@
       - switch.dj_staande_lamp
       - switch.eet_staande_lamp
       - switch.living_staande_lamp
-
+      
 - alias: "staande lampen aan"
   trigger:
     - platform: event
