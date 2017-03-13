@@ -39,7 +39,7 @@
     - service: scene.turn_on
       entity_id: scene.film
 
-- alias: "Movie time off"
+- alias: "Gezellig tafelen"
   trigger:
     - platform: event
       event_type: button_pressed
@@ -187,7 +187,7 @@
     - service: script.turn_on
       entity_id:
         - script.update_and_restart
-        
+
 - alias: 'if switch goes offline send notification'
   trigger:
     platform: state

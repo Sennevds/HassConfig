@@ -2,3 +2,23 @@ sensor.buienradar:
   icon: mdi:weather-pouring
 switch.staande_lampen:
   icon: mdi:lightbulb
+sensor.dark_sky_summary:
+  friendly_name: Overzicht
+sensor.dark_sky_temperature:
+  friendly_name: Temperatuur
+sensor.dark_sky_apparent_temperature:
+  friendly_name: Gevoels temperatuur
+sensor.dark_sky_daily_high_temperature:
+  friendly_name: Maximum temperatuur
+sensor.dark_sky_daily_low_temperature:
+  friendly_name: Minimum temperatuur
+sensor.dark_sky_wind_speed:
+  friendly_name: Wind snelheid
+sensor.dark_sky_wind_bearing:
+  friendly_name: Wind richting
+sensor.dark_sky_humidity:
+  friendly_name: Luchtvochtigheid
+sensor.dark_sky_precip_probability:
+  friendly_name: Neerslag waarschijnlijkheid
+sensor.dark_sky_precip_intensity:
+  friendly_name: Neerslag intensiteit
