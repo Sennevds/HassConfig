@@ -75,7 +75,7 @@
     switch.living_staande_lamp:
       state: off
     light.keuken_lamp:
-      state: off
+      state: on
       brightness: 100
     switch.dj_staande_lamp:
       state: on
