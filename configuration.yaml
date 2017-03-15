@@ -122,7 +122,7 @@ notify:
 mysensors:
   gateways:
     - device: mqtt
-      persistence_file: '/home/hass/.homeassistant/mysensors.json'
+      persistence_file: !secret file
       topic_in_prefix: 'mygateway1-out'
       topic_out_prefix: 'mygateway1-in'
   debug: true
