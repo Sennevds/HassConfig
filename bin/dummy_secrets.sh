@@ -11,4 +11,4 @@ echo "ssl_certificate: dummy" >> $TRAVIS_BUILD_DIR/secrets.yaml
 echo "ssl_key: dummy" >> $TRAVIS_BUILD_DIR/secrets.yaml
 echo "google_client_id: dummy" >> $TRAVIS_BUILD_DIR/secrets.yaml
 echo "google_client_secret: dummy" >> $TRAVIS_BUILD_DIR/secrets.yaml
-echo "file: "+$TRAVIS_BUILD_DIR/+"mysensors.json" >> $TRAVIS_BUILD_DIR/secrets.yaml
+echo "file: " $TRAVIS_BUILD_DIR/ "mysensors.json" >> $TRAVIS_BUILD_DIR/secrets.yaml
