@@ -69,7 +69,7 @@ logger:
   default: error
   logs:
     homeassistant.components.http: warning
-    homeassistant.components.rfxtrx: warning
+    homeassistant.components.rfxtrx: debug
     custom_components: debug
     llap.controller: debug
     mysensors.mysensors: debug
