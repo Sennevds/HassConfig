@@ -60,3 +60,10 @@
     event_end:
       friendly_name: 'Event Time'
       value_template: "{{ states.calendar.feestje_en_shit.attributes.end_time }}"
+
+- platform: systemmonitor
+  resources:
+      - type: disk_use_percent
+        arg: /home
+      - type: memory_use
+      - type: memory_free
