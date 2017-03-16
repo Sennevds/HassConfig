@@ -43,24 +43,6 @@
   command: 'bash /home/hass/.homeassistant/bin/getcommits.sh'
   unit_of_measurement: "Commits behind"
 
-- platform: template
-  sensors:
-    event_title:
-      friendly_name: 'Next Event'
-      value_template: "{{ states.calendar.feestje_en_shit.attributes.message }}"
-    event_description:
-      friendly_name: 'Description'
-      value_template: "{{ states.calendar.feestje_en_shit.attributes.description }}"
-    event_allday:
-      friendly_name: 'All Day?'
-      value_template: "{{ states.calendar.feestje_en_shit.attributes.all_day }}"
-    event_start:
-      friendly_name: 'Event Time'
-      value_template: "{{ states.calendar.feestje_en_shit.attributes.start_time }}"
-    event_end:
-      friendly_name: 'Event Time'
-      value_template: "{{ states.calendar.feestje_en_shit.attributes.end_time }}"
-
 - platform: systemmonitor
   resources:
       - type: disk_use_percent
