@@ -133,29 +133,29 @@
       {%- endif -%}
     entity_id: light.living_1
 
-- alias: "Porch Input Effect"
-  initial_state: True
-  hide_entity: False
-  trigger:
-    - platform: state
-      entity_id: input_select.cabinet_led_effect
-  action:
-    - service: mqtt.publish
-      data_template:
-        topic: "hass/mqttstrip/seteffect"
-        payload: '{{ trigger.to_state.state | string }}'
-
-- alias: "Porch Animation Speed"
-  initial_state: True
-  hide_entity: False
-  trigger:
-    - platform: state
-      entity_id: input_slider.cabinet_animation_speed
-  action:
-    - service: mqtt.publish
-      data_template:
-        topic: "hass/mqttstrip/setanimationspeed"
-        payload: '{{ trigger.to_state.state | int }}'
+# - alias: "Porch Input Effect"
+#   initial_state: True
+#   hide_entity: False
+#   trigger:
+#     - platform: state
+#       entity_id: input_select.cabinet_led_effect
+#   action:
+#     - service: mqtt.publish
+#       data_template:
+#         topic: "hass/mqttstrip/seteffect"
+#         payload: '{{ trigger.to_state.state | string }}'
+#
+# - alias: "Porch Animation Speed"
+#   initial_state: True
+#   hide_entity: False
+#   trigger:
+#     - platform: state
+#       entity_id: input_slider.cabinet_animation_speed
+#   action:
+#     - service: mqtt.publish
+#       data_template:
+#         topic: "hass/mqttstrip/setanimationspeed"
+#         payload: '{{ trigger.to_state.state | int }}'
 
 - alias: 'Update notifications'
   trigger:
@@ -185,8 +185,7 @@
     above: 0
   action:
     - service: script.turn_on
-      entity_id:
-        - script.update_and_restart
+      entity_id: script.update_and_restart
 
 - alias: 'if switch goes offline send notification'
   trigger:
