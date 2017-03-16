@@ -52,6 +52,7 @@ debug:
     - light.kast_leds2
     - switch.test
     - switch.telenet_router
+    - group.systemmonitor
 
 scenesview:
   name: scene
@@ -186,3 +187,10 @@ calendar:
     - sensor.event_allday
     - sensor.event_start
     - sensor.event_end
+
+systemmonitor:
+  name: System monitored_conditions
+  entities:
+    - sensor.disk_use_home
+    - sensor.ram_free
+    - sensor.ram_use
