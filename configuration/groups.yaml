@@ -171,6 +171,7 @@ wemo_lights:
   name: Wemo lights
   entities:
     - light.living_1
+    - light.living_2
     - light.slaapkamer
 
 hue_lights:
@@ -192,6 +193,6 @@ systemmonitor:
   name: System monitored_conditions
   entities:
     - sensor.disk_free_
-    - sensor.disk_use_ 
+    - sensor.disk_use_
     - sensor.ram_free
     - sensor.ram_use
