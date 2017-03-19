@@ -37,3 +37,11 @@
 - platform: wake_on_lan
   mac_address: "AC:9B:0A:EA:8D:37" #"AC-9B-0A-EA-8D-37"
   name: "TV"
+
+- platform: mqtt
+  name: "relay test"
+  state_topic: "hass/relay/switch1"
+  command_topic: "hass/relay/switch1/set"
+  payload_on: "ON"
+  payload_off: "OFF"
+  optimistic: false
