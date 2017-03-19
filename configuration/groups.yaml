@@ -53,6 +53,7 @@ debug:
     - switch.test
     - switch.telenet_router
     - group.systemmonitor
+    - switch.relay_test
 
 scenesview:
   name: scene
@@ -192,6 +193,6 @@ systemmonitor:
   name: System monitored_conditions
   entities:
     - sensor.disk_free_
-    - sensor.disk_use_ 
+    - sensor.disk_use_
     - sensor.ram_free
     - sensor.ram_use
