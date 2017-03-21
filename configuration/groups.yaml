@@ -39,6 +39,7 @@ media_players:
     - media_player.sony_bravia_tv
     - media_player.teichmann
     - media_player.teichmann_audio
+    - media_player.kodi_boven
 
 debug:
   name: debug
