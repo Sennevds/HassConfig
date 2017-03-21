@@ -40,6 +40,7 @@ media_players:
     - media_player.teichmann
     - media_player.teichmann_audio
     - media_player.kodi_boven
+    - media_player.kodi_beneden
 
 debug:
   name: debug

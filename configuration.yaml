@@ -100,6 +100,9 @@ media_player:
   - platform: kodi
     host: 192.168.0.174
     name: kodi boven
+  - platform: kodi
+    host: 192.168.0.185
+    name: kodi beneden
   - platform: cast
     host: 192.168.0.239
   - platform: cast
