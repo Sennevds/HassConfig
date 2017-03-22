@@ -204,6 +204,6 @@ responsetime:
   name: Response Tijd
   entities:
     - sensor.enecs
-    - sensor.collectiefmars
-    - sensor.peterdegraef
+    - sensor.collectief_mars
+    - sensor.peter_de_graef
     - sensor.avad
