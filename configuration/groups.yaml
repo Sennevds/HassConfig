@@ -36,7 +36,6 @@ media_players:
   name: Media Players
   view: yes
   entities:
-    - media_player.sony_bravia_tv
     - media_player.teichmann
     - media_player.teichmann_audio
     - media_player.kodi_boven
