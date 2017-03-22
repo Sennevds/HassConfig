@@ -13,24 +13,29 @@
     - precip_intensity
     - pressure
     - apparent_temperature
+
 - platform: buienradar
   name: "Buienradar"
   timeframe: 3600
+
 - platform: waqi
   locations:
     - antwerp
   token: fdeb7727712ee3555f53e8db76338e2053c7baee
+
 - platform: speedtest
   server_id: 2955
   monitored_conditions:
     - ping
     - download
     - upload
+
 - platform: template
   sensors:
     alarm_time:
       friendly_name: 'Time'
       value_template: '{{ "%0.02d:%0.02d" | format(states("input_slider.alarmhour") | int, states("input_slider.alarmminutes") | int) }}'
+
 - platform: time_date
   display_options:
     - 'time'
@@ -51,3 +56,19 @@
         arg: /
       - type: memory_use_percent
       - type: memory_free
+
+- platform: urlresponsetime
+  name: "Peter De Graef"
+  url: "http://peterdegraef.be"
+
+- platform: urlresponsetime
+  name: "Collectief MARS"
+  url: "http://collectiefmars.be"
+
+- platform: urlresponsetime
+  name: "Avad"
+  url: "http://avad.nl"
+
+- platform: urlresponsetime
+  name: "enecs"
+  urll: "http://enecs.be"

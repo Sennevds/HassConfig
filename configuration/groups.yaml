@@ -55,6 +55,7 @@ debug:
     - switch.telenet_router
     - group.systemmonitor
     - switch.relay_test
+    - group.responsetime
 
 scenesview:
   name: scene
@@ -198,3 +199,11 @@ systemmonitor:
     - sensor.disk_use_
     - sensor.ram_free
     - sensor.ram_use
+
+responsetime:
+  name: Response Tijd
+  entities:
+    - sensor.enecs
+    - sensor.collectiefmars
+    - sensor.peterdegraef
+    - sensor.avad
