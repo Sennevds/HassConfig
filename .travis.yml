@@ -8,6 +8,9 @@ install:
 script: "bash $TRAVIS_BUILD_DIR/bin/check_config.sh"
 notifications:
   email: false
+branches:
+  only:
+    - develop
 secure: "RG12hmm36Zm2J2badJaqVzsABnIGKOZJvYIDx2qqf4VRxoZEssszMJe87UIr1qO57osSK9QxBxgFbPCrGVkMPEB/gGOPf+tNzufXiTFXpc7sfhZC7fKDQylMVzrWXA13ih+HznekkFRywaEuB+B/HKiOyGl7LRhOOTmm9u0HNP/lsJ23vOmcA0ynsRwexzq8+gPkxdrNkxXRQat/Cnq1s1qQqOVlM8siflJqtITdKoonHDrcFRMWZ8ZzsP112gc9YNGSvqZJB1v3ejQB+ADtMBwuErSytnCpi6DjdxLdwTCJaiXQW+REerVk4JrXpd6UYaZqnW0DDJmERwQLdQW0k+l6fK7D3R5nFdeBdfnCUf2ggj7+ev6IpNbyiuznsrVsGCC7Hjq1uchFImtAziqS2rk1kkbeaDPa2fAYfKWwV+CdjHJw2rUWJ4lKTv9V1fz0/PpHtvgV67xMAoep9IS8COtSPRPXPLKGJltRYErs/klKaOWKgBtU5HNAFoj2mu/j1J/2HDZuMZzaa4kh6ktqVU53yszPaDhD8gV5wBin+HuaV7OuVLgjUcqsKvDlX5gnrdGZq/tHewFFewJHH/xBqKxrwoLrZkHdh+b42EN2Z/yxFGx8cKi/DYTywxWbda8zpHNbnGVHe62DX0hvAP5Zocm74cnpxjvNazvL6Upeoms="
 after_success:
   - "curl -o /tmp/travis-automerge https://raw.githubusercontent.com/cdown/travis-automerge/master/travis-automerge"
