@@ -66,7 +66,7 @@ mqtt:
 zeroconf:
 
 logger:
-  default: debug
+  default: warning
   logs:
     homeassistant.components.http: warning
     homeassistant.components.rfxtrx: debug
@@ -95,9 +95,6 @@ input_select: !include configuration/input_select.yaml
 input_boolean: !include configuration/input_boolean.yaml
 
 media_player:
-  - platform: kodi
-    host: 192.168.0.174
-    name: kodi boven
   - platform: kodi
     host: 192.168.0.185
     name: kodi beneden
