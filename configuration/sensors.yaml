@@ -45,7 +45,7 @@
 
 - platform: command_line
   scan_interval: 60
-  command: 'bash /home/hass/.homeassistant/bin/getcommits.sh'
+  command: 'bash /home/homeassistant/.homeassistant/bin/getcommits.sh'
   unit_of_measurement: "Commits behind"
 
 - platform: systemmonitor
@@ -56,6 +56,7 @@
         arg: /
       - type: memory_use_percent
       - type: memory_free
+      - type: processor_use
 
 - platform: urlresponsetime
   name: "Peter De Graef"

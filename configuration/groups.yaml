@@ -195,10 +195,11 @@ calendar:
 systemmonitor:
   name: System monitored_conditions
   entities:
-    - sensor.disk_free_
-    - sensor.disk_use_
+    - sensor.disk_free_home
+    - sensor.disk_use_home
     - sensor.ram_free
     - sensor.ram_use
+    - sensor.processor_use
 
 responsetime:
   name: Response Tijd

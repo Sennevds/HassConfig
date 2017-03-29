@@ -131,7 +131,7 @@ mysensors:
   version: 2.0
 
 shell_command:
-  get_latest_config: 'bash /home/hass/.homeassistant/bin/pullconfig.sh'
+  get_latest_config: 'bash /home/homeassistant/.homeassistant/bin/pullconfig.sh'
 
 panel_iframe:
   agenda:
