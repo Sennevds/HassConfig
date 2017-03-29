@@ -22,18 +22,18 @@
       name: Telenet router
 
 
-- platform: srf
-  port: /dev/ttyS0
-  baudrate: 115200
-  switches:
-    Test:
-      code: AA
-      pin: '05'
-      type: D
-    Arduino3:
-      code: AB
-      pin: '03'
-      type: H
+# - platform: srf
+#   port: /dev/ttyS0
+#   baudrate: 115200
+#   switches:
+#     Test:
+#       code: AA
+#       pin: '05'
+#       type: D
+#     Arduino3:
+#       code: AB
+#       pin: '03'
+#       type: H
 - platform: wake_on_lan
   mac_address: "AC:9B:0A:EA:8D:37" #"AC-9B-0A-EA-8D-37"
   name: "TV"

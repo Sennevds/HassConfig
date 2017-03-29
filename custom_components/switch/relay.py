@@ -43,7 +43,8 @@ def setup_platform(hass, config, add_devices, discovery_info=None):
         switches.append(ArduinoSrfSwitch(pinnum, pin))
     add_devices(switches)
 
-class ArduinoSrfSensor(SwitchDevice):
+
+class ArduinoSrfSwitch(SwitchDevice):
     """Representation of an Arduino switch."""
 
     def __init__(self, pin, options):
