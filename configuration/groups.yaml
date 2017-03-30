@@ -193,13 +193,13 @@ calendar:
     - sensor.event_end
 
 systemmonitor:
-  name: System monitored_conditions
+  name: System monitored conditions
   entities:
-    - sensor.disk_free_home
-    - sensor.disk_use_home
+    - sensor.disk_free_
+    - sensor.disk_use_
     - sensor.ram_free
     - sensor.ram_use
-    - sensor.processor_use
+    - sensor.cpu_use
 
 responsetime:
   name: Response Tijd

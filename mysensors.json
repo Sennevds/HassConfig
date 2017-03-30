@@ -1,0 +1,1 @@
+{"0": {"protocol_version": "2.1.0", "battery_level": 0, "sketch_name": "Doorbell", "sketch_version": "1.0", "type": 17, "sensor_id": 0, "children": {"1": {"type": 0, "id": 1, "description": "", "values": {"16": "0", "15": "1"}}}}}
