@@ -58,18 +58,18 @@
       - type: memory_free
       - type: processor_use
 
-- platform: urlresponsetime
-  name: "Peter De Graef"
-  url: "http://peterdegraef.be"
-
-- platform: urlresponsetime
-  name: "Collectief MARS"
-  url: "http://collectiefmars.be"
-
-- platform: urlresponsetime
-  name: "Avad"
-  url: "http://avad.nl"
-
-- platform: urlresponsetime
-  name: "enecs"
-  urll: "http://enecs.be"
+# - platform: urlresponsetime
+#   name: "Peter De Graef"
+#   url: "http://peterdegraef.be"
+#
+# - platform: urlresponsetime
+#   name: "Collectief MARS"
+#   url: "http://collectiefmars.be"
+#
+# - platform: urlresponsetime
+#   name: "Avad"
+#   url: "http://avad.nl"
+#
+# - platform: urlresponsetime
+#   name: "enecs"
+#   urll: "http://enecs.be"
